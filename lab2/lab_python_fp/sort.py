@@ -1,0 +1,1 @@
+compl = lambda a: -a
