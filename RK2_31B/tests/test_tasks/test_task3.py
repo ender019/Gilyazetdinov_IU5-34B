@@ -1,5 +1,4 @@
 from tasks.task123 import task3
-from tests.conftest import base
 
 class TestTask3:
     def test_task3_work(self, base):

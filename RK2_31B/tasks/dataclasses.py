@@ -5,10 +5,12 @@ class Table():
         self.base_id = base_id
         self.kol = kol
 
+
 class Base():
     def __init__(self, id, name):
         self.id = id
         self.name = name
+
 
 class TableBase():
     def __init__(self, base_id, table_id):
