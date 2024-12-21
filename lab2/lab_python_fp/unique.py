@@ -11,7 +11,6 @@ class Unique(object):
         self.data = [itm[a] for a in itm]
         self.val = 0
         self.size = len(self.data)
-        # print(self.data)
 
     def __next__(self):
         if self.val + 1 < self.size:

@@ -1,10 +1,12 @@
 def print_result(func):
     def wrapper(*args, **kwargs):
         out = func(*args, **kwargs)
+        print("-"*10)
         print(func.__name__)
         if type(out) == type([]): print(*out, sep="\n")
         elif type(out) == type({}): print(*[f"{el} = {out[el]}" for el in out], sep="\n")
         else: print(out, sep="\n")
+        print("-"*10)
         return out
     return wrapper
 
